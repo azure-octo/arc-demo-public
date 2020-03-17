@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flying-kube
-  namespace: demo
+  namespace: flying-kube
 spec:
   selector:
     matchLabels:
@@ -23,7 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flying-kube-svc
-  namespace: demo
+  namespace: flying-kube
 spec:
   selector:
     app: flying-kube
